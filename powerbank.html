@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>Tech Gear</h1>
+        <nav>
+            <a href="index.html">Home</a>
+           <a href="#" id="cart-btn">Cart🛒(<span id="cart-count">0</span>)</a>
+           <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <section class="banner">
+        
+    </section>
+    <section class="products">
+        <div class="product-grid">
+
+            <div class="product-card " data-name="Ambrane mini 10000MAh" data-price="899">
+                <img src="/images/powerbank/-original-imagxyv3ervzp8hy.webp" alt="">
+                <p>Ambrane mini 10000MAh</p>
+                <p>₹899</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Xiamoi 20000Mah" data-price="1599">
+                <img src="/images/powerbank/-original-imah2h6hvtzqjzaq.webp" alt="">
+                <p>Xiaomo 20000MAh</p>
+                <p>₹1599</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Ambrane MAg Safe" data-price="1399">
+                <img src="/images/powerbank/-original-imah439zhgxtxqh7.webp" alt="">
+                <p>Ambrane MagSafe 10000MAh</p>
+                <p>₹1399</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Boat 20000Mah" data-price="1799">
+                <img src="/images/powerbank/-original-imahdthbcurxuh7a.webp" alt="">
+                <p>Boat 20000MAh</p>
+                <p>₹1799</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card charger" data-name="GoBoult mini 20000Mah" data-price="1699">
+                <img src="/images/powerbank/-original-imahecbcfzysvtrr.webp" alt="">
+                <p>GoBoult mini 20000Mah</p>
+                <p>₹1699</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Boat MagSafe 10000MAh" data-price="1399">
+                <img src="/images/powerbank/-original-imahjrng5ampft3z.webp" alt="">
+                <p>Boat MagSafe 10000MAh</p>
+                <p>₹1399</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Portronics 10000MAh" data-price="799">
+                <img src="/images/powerbank/luxcell-uno-10k-10000mah-22-5w-fast-charging-power-bank-original-imahggz6pk9age3h.webp" alt="">
+                <p>Portronics 10000MAh</p>
+                <p>₹799</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="MarQ 20000MAh" data-price="1399">
+                <img src="/images/powerbank/-original-imahdzpzgusbrhb9.webp" alt="">
+                <p>MarQ 20000MAh</p>
+                <p>₹1399</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Portronics Slim 20000MAh" data-price="1699">
+                <img src="/images/powerbank/luxcell-b12-10000-por-2252-portronics-original-imagy9hbkxahntzm.webp" alt="">
+                <p>Portronics Slim 20000Mah</p>
+                <p>₹1699</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Portronics 2in1 PowerBank" data-price="1899">
+                <img src="/images/powerbank/power-shutter-20000-por-3016-portronics-original-imahk4ykcvjfrxba.webp" alt="">
+                <p>Portronics 2in1 PowerBank</p>
+                <p>₹1899</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    
+<section id="cart" class="cart-hidden">
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button id="close-cart">✖</button>
+    </div>
+
+    <ul id="cart-items"></ul>
+
+    <div class="cart-footer">
+        <p>Total: ₹<span id="cart-total">0</span></p>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+</section>
+
+
+
+<script src="cart.js"></script>
+     <footer>
+        <p>Copyright© 2025-2026 All Rights Reserved</p>
+    </footer>
+</body>
+</html>
