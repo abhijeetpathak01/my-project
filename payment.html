@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: #f5f5f5;
+        }
+        .payment-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            text-align: left;
+        }
+        h1 {
+            text-align: center;
+        }
+        .option {
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background: #00B4D8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0096c7;
+        }
+        label {
+            margin-left: 8px;
+            font-weight: bold;
+        }
+        input[type=text], input[type=number] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-box">
+        <h1>Payment Demo</h1>
+
+        <p>Select Payment Method:</p>
+
+        <div class="option">
+            <input type="radio" id="cc" name="payment" value="Credit Card" checked>
+            <label for="cc">Credit Card</label>
+            <div id="cc-fields" style="margin-left:20px; margin-top:5px;">
+                <input type="text" placeholder="Card Number" />
+                <input type="text" placeholder="Name on Card" />
+                <input type="text" placeholder="Expiry MM/YY" />
+                <input type="number" placeholder="CVV" />
+            </div>
+        </div>
+
+        <div class="option">
+            <input type="radio" id="db" name="payment" value="Debit Card">
+            <label for="db">Debit Card</label>
+            <div id="db-fields" style="margin-left:20px; margin-top:5px; display:none;">
+                <input type="text" placeholder="Card Number" />
+                <input type="text" placeholder="Name on Card" />
+                <input type="text" placeholder="Expiry MM/YY" />
+                <input type="number" placeholder="CVV" />
+            </div>
+        </div>
+
+        <div class="option">
+            <input type="radio" id="upi" name="payment" value="UPI">
+            <label for="upi">UPI</label>
+            <div id="upi-fields" style="margin-left:20px; margin-top:5px; display:none;">
+                <input type="text" placeholder="UPI ID" />
+            </div>
+        </div>
+
+        <button id="pay-now">Pay Now</button>
+    </div>
+
+    <script>
+        const ccRadio = document.getElementById("cc");
+        const dbRadio = document.getElementById("db");
+        const upiRadio = document.getElementById("upi");
+
+        const ccFields = document.getElementById("cc-fields");
+        const dbFields = document.getElementById("db-fields");
+        const upiFields = document.getElementById("upi-fields");
+
+        // Show / Hide Fields based on selection
+        ccRadio.addEventListener("change", () => {
+            ccFields.style.display = "block";
+            dbFields.style.display = "none";
+            upiFields.style.display = "none";
+        });
+
+        dbRadio.addEventListener("change", () => {
+            ccFields.style.display = "none";
+            dbFields.style.display = "block";
+            upiFields.style.display = "none";
+        });
+
+        upiRadio.addEventListener("change", () => {
+            ccFields.style.display = "none";
+            dbFields.style.display = "none";
+            upiFields.style.display = "block";
+        });
+
+        // Pay Now Button
+        document.getElementById("pay-now").addEventListener("click", () => {
+            let paymentMethod = document.querySelector('input[name="payment"]:checked').value;
+            alert(`Payment Successful using ${paymentMethod}! (Demo Mode)`);
+        });
+    </script>
+</body>
+</html>
