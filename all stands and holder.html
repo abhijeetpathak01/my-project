@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>Tech Gear</h1>
+        <nav>
+            <a href="index.html">Home</a>
+           <a href="#" id="cart-btn">   🛒 <span id="cart-count">0</span></a>
+           <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <section class="banner">
+        
+    </section>
+    <section class="products">
+        <div class="product-grid">
+
+            <div class="product-card " data-name="mobile table stand" data-price="299">
+                <img src="mobilestand.jpeg" alt="">
+                <p>mobile table stand</p>
+                <p>₹299</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="adjustable mobile stand" data-price="499">
+                <img src="adjustable mobile.jpeg" alt="">
+                <p>adjustable mobile stand</p>
+                <p>₹499</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="foldable phone stand" data-price="24">
+                <img src="foldable.jpeg" alt="">
+                <p>foldable phone stand</p>
+                <p>₹249</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="laptop cooling stand" data-price="1199">
+                <img src="laptop cooling.jpeg" alt="">
+                <p>laptop cooling stand</p>
+                <p>₹1199</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card charger" data-name="car mobile holder" data-price="1299">
+                <img src="carmobile.jpeg" alt="">
+                <p>car mobile holder</p>
+                <p>₹1299</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="bike mobile holder" data-price="599">
+                <img src="bike.jpeg" alt="">
+                <p>bike mobile holder</p>
+                <p>₹599</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="desktop mobile holder" data-price="399">
+                <img src="desktop.jpeg" alt="">
+                <p>desktop mobile holder</p>
+                <p>₹399</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="table stand holder" data-price="699">
+                <img src="table.jpeg" alt="">
+                <p>table stand holder</p>
+                <p>₹699</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="folding tablet&phone stand" data-price="549">
+                <img src="tablet.jpeg" alt="">
+                <p>folding tablet&phone stand</p>
+                <p>₹549</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="adjustable ring stand holder" data-price="299">
+                <img src="ring stand.jpeg" alt="">
+                <p>adjustable ring stand holer</p>
+                <p>₹299</p>
+                <button  class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+<section id="cart" class="cart-hidden">
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button id="close-cart">✖</button>
+    </div>
+
+    <ul id="cart-items"></ul>
+
+    <div class="cart-footer">
+        <p>Total: ₹<span id="cart-total">0</span></p>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+</section>
+
+
+
+<script src="cart.js"></script>
+     <footer>
+        <p>Copyright© 2025-2026 All Rights Reserved</p>
+    </footer>
+</body>
+</html>
